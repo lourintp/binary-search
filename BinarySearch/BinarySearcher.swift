@@ -8,13 +8,17 @@
 
 import Foundation
 
+enum NumberNotFoundError: Error {
+    case numberNotFound
+}
+
 struct BinarySearcher {
     
-    func search(for number: Int, at: [Int]) -> Int {
+    func search(for number: Int, at: [Int]) throws  -> Int {
         if let index = at.firstIndex(of: number) {
             return index
         }
-        fatalError("Number not found on array.")
+        throw NumberNotFoundError.numberNotFound
     }
     
 }
