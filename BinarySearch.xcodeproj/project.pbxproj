@@ -14,6 +14,9 @@
 		2C8A08A323F6115C00853DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8A08A223F6115C00853DBD /* Assets.xcassets */; };
 		2C8A08A623F6115C00853DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8A08A423F6115C00853DBD /* LaunchScreen.storyboard */; };
 		2C8A08B123F6115C00853DBD /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A08B023F6115C00853DBD /* BinarySearchTests.swift */; };
+		2C8A08BC23F612A200853DBD /* BinarySearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A08BB23F612A200853DBD /* BinarySearcher.swift */; };
+		2C8A08BE23F613AA00853DBD /* BinarySearcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A08BD23F613AA00853DBD /* BinarySearcherTests.swift */; };
+		2C8A08BF23F613E000853DBD /* BinarySearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A08BB23F612A200853DBD /* BinarySearcher.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +41,8 @@
 		2C8A08AC23F6115C00853DBD /* BinarySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinarySearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8A08B023F6115C00853DBD /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
 		2C8A08B223F6115C00853DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C8A08BB23F612A200853DBD /* BinarySearcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearcher.swift; sourceTree = "<group>"; };
+		2C8A08BD23F613AA00853DBD /* BinarySearcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearcherTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +91,7 @@
 				2C8A08A223F6115C00853DBD /* Assets.xcassets */,
 				2C8A08A423F6115C00853DBD /* LaunchScreen.storyboard */,
 				2C8A08A723F6115C00853DBD /* Info.plist */,
+				2C8A08BB23F612A200853DBD /* BinarySearcher.swift */,
 			);
 			path = BinarySearch;
 			sourceTree = "<group>";
@@ -95,6 +101,7 @@
 			children = (
 				2C8A08B023F6115C00853DBD /* BinarySearchTests.swift */,
 				2C8A08B223F6115C00853DBD /* Info.plist */,
+				2C8A08BD23F613AA00853DBD /* BinarySearcherTests.swift */,
 			);
 			path = BinarySearchTests;
 			sourceTree = "<group>";
@@ -201,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C8A089E23F6115B00853DBD /* ViewController.swift in Sources */,
+				2C8A08BC23F612A200853DBD /* BinarySearcher.swift in Sources */,
 				2C8A089A23F6115B00853DBD /* AppDelegate.swift in Sources */,
 				2C8A089C23F6115B00853DBD /* SceneDelegate.swift in Sources */,
 			);
@@ -211,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C8A08B123F6115C00853DBD /* BinarySearchTests.swift in Sources */,
+				2C8A08BF23F613E000853DBD /* BinarySearcher.swift in Sources */,
+				2C8A08BE23F613AA00853DBD /* BinarySearcherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,6 +375,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V5G74YC8L;
 				INFOPLIST_FILE = BinarySearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,7 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lourin.BinarySearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -383,6 +394,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5V5G74YC8L;
 				INFOPLIST_FILE = BinarySearch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,7 +402,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lourin.BinarySearch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
