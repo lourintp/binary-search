@@ -12,9 +12,9 @@ import XCTest
 class BinarySearcherTests: XCTestCase {
     
 
-    func testExample() {
+    func test_searchNumberOnIndexFour_returnsRightIndex() {
         let searcher = BinarySearcher()
         
-        XCTAssertEqual(0, searcher.search(for: 7))
+        XCTAssertEqual(4, searcher.search(for: 7, at: [1, 2, 4, 8, 7]))
     }
 }

@@ -10,8 +10,11 @@ import Foundation
 
 struct BinarySearcher {
     
-    func search(for number: Int) -> Int {
-        return 0
+    func search(for number: Int, at: [Int]) -> Int {
+        if let index = at.firstIndex(of: number) {
+            return index
+        }
+        fatalError("Number not found on array.")
     }
     
 }
