@@ -11,10 +11,10 @@ import XCTest
 
 class BinarySearcherTests: XCTestCase {
             
-    func test_searchNumberOnIndexFour_returnsRightIndex() {
+    func test_searchNumber_returnsRightNumber() {
         do {
-            let index = try BinarySearcher().search(for: 7, at: [1, 2, 4, 8, 7])
-            XCTAssertEqual(4, index)
+            let number = try BinarySearcher().search(for: 32, at: [1, 2, 4, 8, 9, 10, 32])
+            XCTAssertEqual(32, number)
         } catch {
             
         }
@@ -22,5 +22,19 @@ class BinarySearcherTests: XCTestCase {
     
     func test_searchForANumberThatIsNotInArray_throwsException() {
         XCTAssertThrowsError(try BinarySearcher().search(for: 2, at: [1, 3, 4]))
+    }
+    
+    func test_searchNumberOnIndexFour_returnsIndexFour() {
+        let arrayOfIntegers = [1, 2, 4, 8, 9, 10, 32]
+        let index = BinarySearcher().search(array: arrayOfIntegers, key: 9, range: 0..<arrayOfIntegers.count)
+        
+        XCTAssertEqual(4, index)
+    }
+    
+    func test_searchForNumberThatIsNotInArray_returnsNil() {
+        let arrayOfIntegers = [1, 2, 4, 8, 9, 10, 32]
+        let index = BinarySearcher().search(array: arrayOfIntegers, key: 7, range: 0..<arrayOfIntegers.count)
+        
+        XCTAssertNil(index)
     }
 }

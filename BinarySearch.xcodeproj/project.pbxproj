@@ -13,10 +13,10 @@
 		2C8A08A123F6115B00853DBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8A089F23F6115B00853DBD /* Main.storyboard */; };
 		2C8A08A323F6115C00853DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8A08A223F6115C00853DBD /* Assets.xcassets */; };
 		2C8A08A623F6115C00853DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8A08A423F6115C00853DBD /* LaunchScreen.storyboard */; };
-		2C8A08B123F6115C00853DBD /* BinarySearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A08B023F6115C00853DBD /* BinarySearchTests.swift */; };
 		2C8A08BC23F612A200853DBD /* BinarySearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A08BB23F612A200853DBD /* BinarySearcher.swift */; };
 		2C8A08BE23F613AA00853DBD /* BinarySearcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A08BD23F613AA00853DBD /* BinarySearcherTests.swift */; };
 		2C8A08BF23F613E000853DBD /* BinarySearcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A08BB23F612A200853DBD /* BinarySearcher.swift */; };
+		2C8A08C123F6205E00853DBD /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A08C023F6205E00853DBD /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,10 +39,10 @@
 		2C8A08A523F6115C00853DBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C8A08A723F6115C00853DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C8A08AC23F6115C00853DBD /* BinarySearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinarySearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2C8A08B023F6115C00853DBD /* BinarySearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearchTests.swift; sourceTree = "<group>"; };
 		2C8A08B223F6115C00853DBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C8A08BB23F612A200853DBD /* BinarySearcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearcher.swift; sourceTree = "<group>"; };
 		2C8A08BD23F613AA00853DBD /* BinarySearcherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearcherTests.swift; sourceTree = "<group>"; };
+		2C8A08C023F6205E00853DBD /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +92,7 @@
 				2C8A08A423F6115C00853DBD /* LaunchScreen.storyboard */,
 				2C8A08A723F6115C00853DBD /* Info.plist */,
 				2C8A08BB23F612A200853DBD /* BinarySearcher.swift */,
+				2C8A08C023F6205E00853DBD /* TableViewCell.swift */,
 			);
 			path = BinarySearch;
 			sourceTree = "<group>";
@@ -99,7 +100,6 @@
 		2C8A08AF23F6115C00853DBD /* BinarySearchTests */ = {
 			isa = PBXGroup;
 			children = (
-				2C8A08B023F6115C00853DBD /* BinarySearchTests.swift */,
 				2C8A08B223F6115C00853DBD /* Info.plist */,
 				2C8A08BD23F613AA00853DBD /* BinarySearcherTests.swift */,
 			);
@@ -207,6 +207,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C8A08C123F6205E00853DBD /* TableViewCell.swift in Sources */,
 				2C8A089E23F6115B00853DBD /* ViewController.swift in Sources */,
 				2C8A08BC23F612A200853DBD /* BinarySearcher.swift in Sources */,
 				2C8A089A23F6115B00853DBD /* AppDelegate.swift in Sources */,
@@ -218,7 +219,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C8A08B123F6115C00853DBD /* BinarySearchTests.swift in Sources */,
 				2C8A08BF23F613E000853DBD /* BinarySearcher.swift in Sources */,
 				2C8A08BE23F613AA00853DBD /* BinarySearcherTests.swift in Sources */,
 			);

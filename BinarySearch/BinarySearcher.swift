@@ -36,10 +36,25 @@ struct BinarySearcher {
         }
         
         if (number == middleValue) {
-            return middleIndex
+            return number
         }
         
         throw NumberNotFoundError.numberNotFound
     }
     
+    func search<T: Comparable>(array: [T], key: T, range: Range<Int>) -> Int? {        
+        guard range.startIndex < range.endIndex else {
+            return nil
+        }
+                
+        let midIndex = range.startIndex + (range.endIndex - range.startIndex) / 2
+        
+        if array[midIndex] > key {
+            return search(array: array, key: key, range: range.startIndex ..< midIndex)
+        } else if array[midIndex] < key {
+            return search(array: array, key: key, range: midIndex + 1 ..< range.endIndex)
+        } else {
+            return midIndex
+        }
+    }
 }
